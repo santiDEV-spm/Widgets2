@@ -8,6 +8,7 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -87,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        WebView webView = (WebView) findViewById(R.id.webview);
+        webView.loadUrl("http://google.com");
 
         //Main Activity
       /*  myTextView = (TextView) findViewById(R.id.tv_hello);
